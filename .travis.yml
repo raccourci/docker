@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - docker build -t raccourci/composer composer
+  - docker tag composer raccourci/composer
+  - docker tag composer:latest raccourci/composer:latest
+  - docker push raccourci/composer
