@@ -5,6 +5,5 @@ services:
 
 script:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-  - docker build -t raccourci/composer -f composer/Dockerfile
-  - docker tag composer raccourci/composer
+  - docker build -t raccourci/composer -t raccourci/composer:latest composer
   - docker push raccourci/composer
