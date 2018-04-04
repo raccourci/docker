@@ -1,4 +1,4 @@
-FROM raccourci/composer
+FROM raccourci/composer:7-alpine
 
 # Install WP CLI
 RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && \

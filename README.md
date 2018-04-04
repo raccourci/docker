@@ -9,31 +9,26 @@
 - Puppet 5 + Debian 9.4 (docker tags: `debian-9.4`) - `docker pull raccourci/puppet:debian-9.4`
 - Puppet 5 + Debian 7.11 (docker tags: `debian-7.11`) - `docker pull raccourci/puppet:debian-7.11`
 
-### PHP 7
-
-- PHP CLI + Alpine 3.7 (docker tags: `7-cli-alpine3.7`) - `docker pull raccourci/php:7-cli-alpine3.7`
-- PHP CLI + Alpine 3.7 (docker tags: `7-cli-alpine`) - `docker pull raccourci/php:7-cli-alpine`
-- PHP CLI + Alpine 3.7 (docker tags: `7-cli`) - `docker pull raccourci/php:7-cli`
-- PHP FPM + Alpine 3.7 (docker tags: `7-fpm-alpine3.7`) - `docker pull raccourci/php:7-fpm-alpine3.7`
-- PHP FPM + Alpine 3.7 (docker tags: `7-fpm-alpine`) - `docker pull raccourci/php:7-fpm-alpine`
-- PHP FPM + Alpine 3.7 (docker tags: `7-fpm`) - `docker pull raccourci/php:7-fpm`
-
 ### NODE 9
 
-- NODE 9 + Alpine 3.7 (docker tags: `9-alpine`) - `docker pull raccourci/node:9-alpine`
-- NODE 9 + Alpine 3.7 (docker tags: `9`) - `docker pull raccourci/node:9`
+- Node 9 + Alpine (docker tags: `9-alpine`) - `docker pull raccourci/node:9-alpine`
 
 ### NGINX
 
-- NGINX + Alpine 3.7 (docker tags: `alpine`) - `docker pull raccourci/nginx:alpine`
+- Nginx + Alpine (docker tags: `alpine`) - `docker pull raccourci/nginx:alpine`
 
-### COMPOSER
+### PHP 7
 
-- COMPOSER + Alpine 3.7 (docker tags: `composer`) - `docker pull raccourci/composer`
+- PHP cli + Alpine (docker tags: `7-cli-alpine`) - `docker pull raccourci/php:7-cli-alpine`
+- PHP fpm + Alpine (docker tags: `7-fpm-alpine`) - `docker pull raccourci/php:7-fpm-alpine`
 
-### WP CLI
+### PHP7 + COMPOSER
 
-- WP CLI + Alpine 3.7 (docker tags: `wp-cli`) - `docker pull raccourci/wp-cli`
+- Composer + Alpine (docker tags: `7-alpine`) - `docker pull raccourci/composer:7-alpine`
+
+### PHP7 + COMPOSER + WP CLI
+
+- WP cli + Alpine (docker tags: `7-alpine`) - `docker pull raccourci/wp-cli:7-alpine`
 
 ## License
 

@@ -2,10 +2,24 @@ FROM php:7-cli-alpine3.7
 
 ENV LOCALTIME Europe/Paris
 
-RUN apk add --no-cache --update openssh && \
-    apk add --no-cache --update --virtual .phpize-deps $PHPIZE_DEPS
+RUN apk add --no-cache --update \
+    nano \
+    wget \
+    curl \
+    git \
+    openssh \
+    openssl \
+    libmemcached-libs \
+    mysql-client \
+    yaml \
+    zlib \
+    freetype \
+    libpng \
+    libjpeg-turbo \
+    libjpeg-turbo-utils
 
-RUN apk add --no-cache --update --virtual .tzdata-deps tzdata && \
+RUN apk add --no-cache --update --virtual .phpize-deps $PHPIZE_DEPS && \
+    apk add --no-cache --update --virtual .tzdata-deps tzdata && \
     cp /usr/share/zoneinfo/$LOCALTIME /etc/localtime && \
     echo $LOCALTIME > /etc/timezone
 
@@ -42,8 +56,9 @@ RUN apk add --no-cache --update freetype mysql-client && \
 RUN docker-php-ext-install opcache && \
     docker-php-ext-install zip
 
+RUN echo "memory_limit=-1" > "$PHP_INI_DIR/conf.d/memory-limit.ini" && \
+    echo "date.timezone=${PHP_TIMEZONE:-UTC}" > "$PHP_INI_DIR/conf.d/date_timezone.ini"
+
 RUN rm -rf /usr/share/php7 && \
     rm -rf /tmp/* && \
     apk del .tzdata-deps .phpize-deps .memcached-deps .intl-deps .yaml-deps .gd-deps
-
-WORKDIR /var/www
