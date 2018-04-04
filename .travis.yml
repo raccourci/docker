@@ -5,15 +5,15 @@ services:
 
 script:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
-  - docker build --pull -t raccourci/node:9-alpine composer/ >> /dev/null
-  - docker push raccourci/node:9-alpine > /dev/null
-  - docker build --pull -t raccourci/nginx:alpine composer/ >> /dev/null
-  - docker push raccourci/nginx:alpine > /dev/null
-  - docker build --pull -t raccourci/php:7-cli-alpine composer/ >> /dev/null
-  - docker push raccourci/php:7-cli-alpine > /dev/null
-  - docker build --pull -t raccourci/php:7-fpm-alpine composer/ >> /dev/null
-  - docker push raccourci/php:7-fpm-alpine > /dev/null
-  - docker build --pull -t raccourci/composer:7-alpine composer/ >> /dev/null
-  - docker push raccourci/composer:7-alpine > /dev/null
-  - docker build --pull -t raccourci/wp-cli:7-alpine composer/ >> /dev/null
-  - docker push raccourci/wp-cli:7-alpine > /dev/null
+  - docker build --pull -t raccourci/node:9-alpine node/9-alpine/
+  - docker push raccourci/node:9-alpine
+  - docker build --pull -t raccourci/nginx:alpine nginx/alpine/
+  - docker push raccourci/nginx:alpine
+  - docker build --pull -t raccourci/php:7-cli-alpine php/7-cli-alpine/
+  - docker push raccourci/php:7-cli-alpine
+  - docker build --pull -t raccourci/php:7-fpm-alpine php/7-fpm-alpine/
+  - docker push raccourci/php:7-fpm-alpine
+  - docker build --pull -t raccourci/composer:7-alpine composer/
+  - docker push raccourci/composer:7-alpine
+  - docker build --pull -t raccourci/wp-cli:7-alpine wp-cli/
+  - docker push raccourci/wp-cli:7-alpine
