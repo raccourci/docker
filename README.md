@@ -25,6 +25,14 @@
 
 - NGINX + Alpine 3.7 (docker tags: `alpine`) - `docker pull raccourci/nginx:alpine`
 
+### COMPOSER
+
+- COMPOSER + Alpine 3.7 (docker tags: `composer`) - `docker pull raccourci/composer`
+
+### WP CLI
+
+- WP CLI + Alpine 3.7 (docker tags: `wp-cli`) - `docker pull raccourci/wp-cli`
+
 ## License
 
 View [LICENSE](LICENSE) for the software contained in this image.
