@@ -13,7 +13,9 @@ RUN apt-get update && apt-get install -y \
     git \
     wget \
     curl \
-    lsb-release
+    lsb-release \
+    apt-transport-https \
+    ca-certificates
 
 RUN wget https://apt.puppetlabs.com/puppet5-release-"$DEBIAN_CODENAME".deb && \
     dpkg -i puppet5-release-"$DEBIAN_CODENAME".deb && \
