@@ -1,6 +1,10 @@
 FROM debian:9.4
 
 ENV DEBIAN_CODENAME="stretch"
+ENV LOCALTIME Europe/Paris
+
+RUN cp /usr/share/zoneinfo/$LOCALTIME /etc/localtime && \
+    echo $LOCALTIME > /etc/timezone
 
 RUN apt-get update && apt-get install -y \
     apt-utils \

@@ -4,6 +4,10 @@ services:
   - docker
 
 script:
+  - docker build --pull -t raccourci/puppet:debian-9.4 wp-cli/
+  - docker push raccourci/puppet:debian-9.4
+  - docker build --pull -t raccourci/puppet:debian-7.11 wp-cli/
+  - docker push raccourci/puppet:debian-7.11
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
   - docker build --pull -t raccourci/node:9-alpine node/9-alpine/
   - docker push raccourci/node:9-alpine

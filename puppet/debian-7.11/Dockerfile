@@ -1,6 +1,10 @@
 FROM debian:7.11
 
 ENV DEBIAN_CODENAME="wheezy"
+ENV LOCALTIME Europe/Paris
+
+RUN cp /usr/share/zoneinfo/$LOCALTIME /etc/localtime && \
+    echo $LOCALTIME > /etc/timezone
 
 RUN apt-get update && apt-get install -y \
     apt-utils \
