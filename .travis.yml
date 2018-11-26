@@ -11,6 +11,8 @@ script:
   - docker push raccourci/puppet:debian-9.4
   - docker build --pull -t raccourci/puppet:debian-9.5 puppet/debian-9.5
   - docker push raccourci/puppet:debian-9.5
+  - docker build --pull -t raccourci/puppet:debian-9.6 puppet/debian-9.6
+  - docker push raccourci/puppet:debian-9.6
   - docker build --pull -t raccourci/puppet:debian-7.11 puppet/debian-7.11
   - docker push raccourci/puppet:debian-7.11
   - docker build --pull -t raccourci/node:9-alpine node/9-alpine/
