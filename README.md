@@ -1,6 +1,6 @@
 # Docker Images by Raccourci Agency
 
-[![Build Status](https://travis-ci.org/Raccourci/docker.svg?branch=master)](https://travis-ci.org/Raccourci/docker)
+[![Build Status](https://travis-ci.org/raccourci/docker.svg?branch=master)](https://travis-ci.org/raccourci/docker)
 
 ## Version available
 

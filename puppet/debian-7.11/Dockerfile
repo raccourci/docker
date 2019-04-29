@@ -31,4 +31,6 @@ ENV PATH=/opt/puppetlabs/server/bin:/opt/puppetlabs/puppet/bin:/opt/puppetlabs/b
 
 RUN gem install librarian-puppet
 
+RUN useradd -u 1001 -ms /bin/bash raccourci
+
 ENTRYPOINT [ "/bin/bash" ]
