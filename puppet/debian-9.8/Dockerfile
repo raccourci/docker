@@ -1,4 +1,4 @@
-FROM debian:9.9
+FROM debian:9.8
 
 ENV DEBIAN_CODENAME="stretch"
 ENV LOCALTIME Europe/Paris

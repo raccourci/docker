@@ -6,7 +6,7 @@
 
 ### PUPPET 5
 
-- Puppet 5 + Debian 9.9 (docker tags: `debian-9.9`) - `docker pull raccourci/puppet:debian-9.9`
+- Puppet 5 + Debian 9.8 (docker tags: `debian-9.8`) - `docker pull raccourci/puppet:debian-9.8`
 - Puppet 5 + Debian 7.11 (docker tags: `debian-7.11`) - `docker pull raccourci/puppet:debian-7.11`
 
 ### NODE 9
