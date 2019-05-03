@@ -7,14 +7,6 @@ before_script:
   - docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 
 script:
-  - docker build --pull -t raccourci/puppet:debian-9.4 puppet/debian-9.4
-  - docker push raccourci/puppet:debian-9.4
-  - docker build --pull -t raccourci/puppet:debian-9.5 puppet/debian-9.5
-  - docker push raccourci/puppet:debian-9.5
-  - docker build --pull -t raccourci/puppet:debian-9.6 puppet/debian-9.6
-  - docker push raccourci/puppet:debian-9.6
-  - docker build --pull -t raccourci/puppet:debian-9.8 puppet/debian-9.8
-  - docker push raccourci/puppet:debian-9.8
   - docker build --pull -t raccourci/puppet:debian-9.9 puppet/debian-9.9
   - docker push raccourci/puppet:debian-9.9
   - docker build --pull -t raccourci/puppet:debian-7.11 puppet/debian-7.11
