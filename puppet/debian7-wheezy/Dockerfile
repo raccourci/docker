@@ -1,4 +1,4 @@
-FROM debian:7.11
+FROM debian:wheezy
 
 ENV DEBIAN_CODENAME="wheezy"
 ENV LOCALTIME Europe/Paris

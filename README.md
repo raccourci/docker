@@ -2,12 +2,13 @@
 
 [![Build Status](https://travis-ci.org/raccourci/docker.svg?branch=master)](https://travis-ci.org/raccourci/docker)
 
-## Version available
+## Available versions
 
 ### PUPPET 5
 
-- Puppet 5 + Debian 9.8 (docker tags: `debian-9.8`) - `docker pull raccourci/puppet:debian-9.8`
-- Puppet 5 + Debian 7.11 (docker tags: `debian-7.11`) - `docker pull raccourci/puppet:debian-7.11`
+- Puppet 5 + Debian 9 Stretch (docker tags: `debian9-stretch`) - `docker pull raccourci/puppet:debian9-stretch`
+- Puppet 5 + Debian 8 Jessie (docker tags: `debian8-jessie`) - `docker pull raccourci/puppet:debian8-jessie`
+- Puppet 5 + Debian 7 Wheezy (docker tags: `debian7-wheezy`) - `docker pull raccourci/puppet:debian7-wheezy`
 
 ### NODE 9
 
@@ -28,7 +29,7 @@
 
 ### PHP7 + COMPOSER + WP CLI
 
-- WP cli + Alpine (docker tags: `7-alpine`) - `docker pull raccourci/wp-cli:7-alpine`
+- WP CLI + Alpine (docker tags: `7-alpine`) - `docker pull raccourci/wp-cli:7-alpine`
 
 ## License
 
