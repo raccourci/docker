@@ -11,8 +11,6 @@ script:
   - docker push raccourci/puppet:debian9-stretch
   - docker build --pull -t raccourci/puppet:debian8-jessie puppet/debian8-jessie
   - docker push raccourci/puppet:debian8-jessie
-  - docker build --pull -t raccourci/puppet:debian7-wheezy puppet/debian7-wheezy
-  - docker push raccourci/puppet:debian7-wheezy
   - docker build --pull -t raccourci/node:9-alpine node/9-alpine/
   - docker push raccourci/node:9-alpine
   - docker build --pull -t raccourci/nginx:alpine nginx/alpine/
