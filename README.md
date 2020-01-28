@@ -6,7 +6,7 @@
 
 ### PUPPET 5
 
-- Puppet 5 + Debian 10 Stretch (docker tags: `debian10-buster`) - `docker pull raccourci/puppet:debian10-buster`
+- Puppet 5 + Debian 10 Buster (docker tags: `debian10-buster`) - `docker pull raccourci/puppet:debian10-buster`
 - Puppet 5 + Debian 9 Stretch (docker tags: `debian9-stretch`) - `docker pull raccourci/puppet:debian9-stretch`
 - Puppet 5 + Debian 8 Jessie (docker tags: `debian8-jessie`) - `docker pull raccourci/puppet:debian8-jessie`
 
