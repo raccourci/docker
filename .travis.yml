@@ -1,4 +1,11 @@
-sudo: required
+dist:
+  - xenial
+
+os:
+  - linux
+
+language:
+  - ruby
 
 services:
   - docker
