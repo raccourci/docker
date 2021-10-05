@@ -9,8 +9,8 @@ RUN cp /usr/share/zoneinfo/$LOCALTIME /etc/localtime && \
     apt-get update && \
     apt-get install -y apt-utils dialog dirmngr git wget curl lsb-release apt-transport-https ca-certificates && \
     wget https://apt.puppet.com/puppet7-release-"$DEBIAN_CODENAME".deb && \
-    dpkg -i puppet5-release-"$DEBIAN_CODENAME".deb && \
-    rm puppet5-release-"$DEBIAN_CODENAME".deb && \
+    dpkg -i puppet7-release-"$DEBIAN_CODENAME".deb && \
+    rm puppet7-release-"$DEBIAN_CODENAME".deb && \
     apt-get update && \
     apt-get install -y puppet-agent && \
     apt-get upgrade -y && \
