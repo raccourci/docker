@@ -1,6 +1,6 @@
 FROM node:9-alpine
 
-ENV LOCALTIME Europe/Paris
+ENV LOCALTIME=Europe/Paris
 ENV NPM_DEPS make g++ automake autoconf libtool nasm
 
 RUN apk add --no-cache --update \

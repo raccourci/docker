@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-ENV LOCALTIME Europe/Paris
+ENV LOCALTIME=Europe/Paris
 
 RUN apk add --no-cache --update --virtual .tzdata-deps tzdata && \
     cp /usr/share/zoneinfo/$LOCALTIME /etc/localtime && \

@@ -1,6 +1,6 @@
 FROM php:7-fpm-alpine3.7
 
-ENV LOCALTIME Europe/Paris
+ENV LOCALTIME=Europe/Paris
 
 RUN apk add --no-cache --update \
     nano \

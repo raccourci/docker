@@ -1,7 +1,7 @@
 FROM debian:jessie
 
 ENV DEBIAN_CODENAME="jessie"
-ENV LOCALTIME Europe/Paris
+ENV LOCALTIME=Europe/Paris
 ENV PATH=/opt/puppetlabs/server/bin:/opt/puppetlabs/puppet/bin:/opt/puppetlabs/bin:$PATH
 
 RUN cp /usr/share/zoneinfo/$LOCALTIME /etc/localtime && \
