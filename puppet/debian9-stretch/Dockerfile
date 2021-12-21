@@ -14,8 +14,8 @@ RUN cp /usr/share/zoneinfo/$LOCALTIME /etc/localtime && \
     apt-get update && \
     apt-get install -y puppet-agent && \
     apt-get upgrade -y && \
-    apt-get autoclean -y && \
     apt-get autoremove -y && \
+    apt-get autoclean -y && \
     rm -rf /var/lib/apt/lists/* && \
     rmdir /etc/puppetlabs/code/modules/ && \
     ln -s /etc/puppet/modules /etc/puppetlabs/code/ && \
