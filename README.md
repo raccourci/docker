@@ -32,6 +32,16 @@
 
 - WP CLI + Alpine (docker tags: `7-alpine`) - `docker pull raccourci/wp-cli:7-alpine`
 
+## Github Actions
+
+### Run locally with Act
+
+[https://github.com/nektos/act](https://github.com/nektos/act)
+
+```
+brew install act
+```
+
 ## License
 
 View [LICENSE](LICENSE) for the software contained in this image.
