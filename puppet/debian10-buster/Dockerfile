@@ -16,6 +16,7 @@ RUN cp /usr/share/zoneinfo/$LOCALTIME /etc/localtime && \
     apt-get upgrade -y && \
     apt-get autoremove -y && \
     apt-get autoclean -y && \
+    rm -rf /var/lib/apt/lists/* && \
     rmdir /etc/puppetlabs/code/modules/ && \
     ln -s /etc/puppet/modules /etc/puppetlabs/code/ && \
     gem install librarian-puppet
