@@ -1,7 +1,5 @@
 # Docker Images by Raccourci Agency
 
-[![Build Status](https://api.travis-ci.com/raccourci/docker.svg?branch=master)](https://app.travis-ci.com/github/raccourci/docker)
-
 ## Available versions
 
 ### PUPPET 5
