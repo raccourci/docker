@@ -4,6 +4,9 @@
 
 ### PUPPET 5
 
+- Puppet 7 + Debian 12 Bookworm ARM64v8 (docker tags: `debian12-bookworm`) - `docker pull raccourci/puppet:debian12-bookworm-arm64v8`
+- Puppet 7 + Debian 12 Bookworm (docker tags: `debian12-bookworm`) - `docker pull raccourci/puppet:debian12-bookworm`
+- Puppet 7 + Debian 11 Bullseye ARM64v8 (docker tags: `debian11-bullseye`) - `docker pull raccourci/puppet:debian11-bullseye-arm64v8`
 - Puppet 7 + Debian 11 Bullseye (docker tags: `debian11-bullseye`) - `docker pull raccourci/puppet:debian11-bullseye`
 - Puppet 5 + Debian 10 Buster (docker tags: `debian10-buster`) - `docker pull raccourci/puppet:debian10-buster`
 - Puppet 5 + Debian 9 Stretch (docker tags: `debian9-stretch`) - `docker pull raccourci/puppet:debian9-stretch`
