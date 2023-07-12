@@ -6,7 +6,7 @@ ENV PATH=/opt/puppetlabs/server/bin:/opt/puppetlabs/puppet/bin:/opt/puppetlabs/b
 RUN cp /usr/share/zoneinfo/$LOCALTIME /etc/localtime
 RUN echo $LOCALTIME > /etc/timezone
 RUN apt-get update
-RUN apt-get install -y apt-utils dialog dirmngr git wget curl lsb-release apt-transport-https ca-certificates ruby gem libaugeas-dev
+RUN apt-get install -y apt-utils dialog dirmngr git wget curl lsb-release apt-transport-https ca-certificates ruby ruby-dev gem libaugeas-dev
 RUN apt-get upgrade -y
 RUN apt-get autoremove -y
 RUN apt-get autoclean -y
