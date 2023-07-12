@@ -12,7 +12,7 @@ RUN apt-get autoremove -y
 RUN apt-get autoclean -y
 RUN rm -rf /var/lib/apt/lists/*
 RUN gem install librarian-puppet puppet facter
-RUN rmdir /etc/puppetlabs/code/modules/
-RUN ln -s /etc/puppet/modules /etc/puppetlabs/code/
+#RUN rmdir /etc/puppetlabs/code/modules/
+#RUN ln -s /etc/puppet/modules /etc/puppetlabs/code/
 
 ENTRYPOINT [ "/bin/bash" ]
