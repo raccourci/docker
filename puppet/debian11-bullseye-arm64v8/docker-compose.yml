@@ -1,8 +1,0 @@
-version: '3'
-
-services:
-    docker_debug:
-        build:
-            context: ./
-        privileged: true
-        container_name: docker_debug
