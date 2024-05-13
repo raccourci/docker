@@ -1,4 +1,4 @@
-FROM debian:bullseye
+FROM arm64v8/debian:bullseye
 
 ENV DEBIAN_CODENAME="bullseye"
 ENV LOCALTIME=Europe/Paris
