@@ -7,7 +7,7 @@ on:
 
 jobs:
   docker:
-    runs-on: ubuntu-latest
+    runs-on: arm64v8/ubuntu
     steps:
       -
         name: Checkout
