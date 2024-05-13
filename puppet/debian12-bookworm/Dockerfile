@@ -17,8 +17,8 @@ RUN apt-get upgrade -y
 RUN apt-get autoremove -y
 RUN apt-get autoclean -y
 RUN rm -rf /var/lib/apt/lists/*
-RUN rm -rf /etc/puppetlabs/code/modules/
-RUN ln -s /etc/puppet/modules /etc/puppetlabs/code/
+# RUN rm -rf /etc/puppetlabs/code/modules/
+# RUN ln -s /etc/puppet/modules /etc/puppetlabs/code/
 RUN gem install librarian-puppet
 RUN ln -s /usr/local/bin/librarian-puppet /opt/puppetlabs/puppet/bin/librarian-puppet
 
